@@ -14,8 +14,8 @@ class AdminUsersTableSeeder extends Seeder
     {
         $user = new AdminUser();
         $user->name = "Admin";
-        $user->email = "admin@soemath.com";
-        $user->password = crypt("pass2vh3cp24z10","");
+        $user->email = "admin@xyz.com";
+        $user->password = crypt("admin","");
         $user->save();
     }
 }
