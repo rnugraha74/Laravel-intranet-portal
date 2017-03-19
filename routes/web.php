@@ -15,16 +15,53 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-Route::get('admin_login','AdminAuth\LoginController@showLoginForm');
-Route::post('admin_login','AdminAuth\LoginController@login');
-Route::post('admin_logout','AdminAuth\LoginController@logout');
-Route::post('admin_password/email','AdminAuth\ForgotPasswordController@sendResetLinkEmail');
-Route::post('admin_password/reset','AdminAuth\ForgotPasswordController@showLinkRequestForm');
-Route::post('admin_password/reset','AdminAuth\ResetPasswordController@reset');
-Route::get('admin_password/reset/{token}','AdminAuth\ResetPasswordController@showResetForm');
-Route::get ('admin_register','AdminAuth\RegisterController@showRegistrationForm');
-Route::post('admin_register','AdminAuth\RegisterController@register');
+//Auth::routes();
 
-Route::get('/home','HomeController@index');
-Route::get('/admin_home','AdminHomeController@index');
+Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('cms', ['as' => 'admin.home', 'uses' => 'AdminHomeController@index']);
+
+
+// User Login Routes...
+Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
+Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+
+// User Registration Routes...
+Route::get('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
+Route::post('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@register']);
+
+// User Password Reset Routes...
+Route::get('password/reset/{token?}', ['as' => 'password.reset', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
+Route::post('password/email', ['as' => 'password.email',  'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
+Route::post('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ResetPasswordController@reset']);
+Route::post('password/reset', ['as' => 'password.request', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
+
+// Admin Login Routes...
+Route::get('admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@showLoginForm']);
+Route::post('admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@login']);
+Route::post('admin_logout', ['as' => 'admin.logout', 'uses' => 'AdminAuth\LoginController@logout']);
+
+// Admin Registration Routes...
+Route::get('admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@showRegistrationForm']);
+Route::post('admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@register']);
+
+// Admin Password Reset Routes...
+Route::get('admin_password/reset/{token?}', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@showResetForm']);
+Route::post('admin_password/email', ['as' => 'admin.password.email',  'uses' => 'AdminAuth\ForgotPasswordController@sendResetLinkEmail']);
+Route::post('admin_password/reset', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@reset']);
+Route::post('admin_password/reset', ['as' => 'admin.password.request', 'uses' => 'AdminAuth\ForgotPasswordController@showLinkRequestForm']);
+
+
+/*Route::get('admin_login', 'AdminAuth\LoginController@showLoginForm');
+Route::post('admin_login', 'AdminAuth\LoginController@login');
+Route::post('admin_logout', 'AdminAuth\LoginController@logout');
+
+Route::post('admin_password/email', 'AdminAuth\ForgotPasswordController@sendResetLinkEmail');
+Route::post('admin_password/reset', 'AdminAuth\ForgotPasswordController@showLinkRequestForm');
+Route::post('admin_password/reset', 'AdminAuth\ResetPasswordController@reset');
+Route::get('admin_password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
+
+Route::get ('admin_register', 'AdminAuth\RegisterController@showRegistrationForm');
+Route::post('admin_register', 'AdminAuth\RegisterController@register');
+
+*/
