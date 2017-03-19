@@ -37,19 +37,19 @@ Route::post('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ResetPa
 Route::post('password/reset', ['as' => 'password.request', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
 
 // Admin Login Routes...
-Route::get('admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@showLoginForm']);
-Route::post('admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@login']);
-Route::post('admin_logout', ['as' => 'admin.logout', 'uses' => 'AdminAuth\LoginController@logout']);
+Route::get('cms/admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@showLoginForm']);
+Route::post('cms/admin_login', ['as' => 'admin.login', 'uses' => 'AdminAuth\LoginController@login']);
+Route::post('cms/admin_logout', ['as' => 'admin.logout', 'uses' => 'AdminAuth\LoginController@logout']);
 
 // Admin Registration Routes...
-Route::get('admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@showRegistrationForm']);
-Route::post('admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@register']);
+Route::get('cms/admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@showRegistrationForm']);
+Route::post('cms/admin_register', ['as' => 'admin.register', 'uses' => 'AdminAuth\RegisterController@register']);
 
 // Admin Password Reset Routes...
-Route::get('admin_password/reset/{token?}', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@showResetForm']);
-Route::post('admin_password/email', ['as' => 'admin.password.email',  'uses' => 'AdminAuth\ForgotPasswordController@sendResetLinkEmail']);
-Route::post('admin_password/reset', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@reset']);
-Route::post('admin_password/reset', ['as' => 'admin.password.request', 'uses' => 'AdminAuth\ForgotPasswordController@showLinkRequestForm']);
+Route::get('cms/admin_password/reset/{token?}', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@showResetForm']);
+Route::post('cms/admin_password/email', ['as' => 'admin.password.email',  'uses' => 'AdminAuth\ForgotPasswordController@sendResetLinkEmail']);
+Route::post('cms/admin_password/reset', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@reset']);
+Route::post('cms/admin_password/reset', ['as' => 'admin.password.request', 'uses' => 'AdminAuth\ForgotPasswordController@showLinkRequestForm']);
 
 
 /*Route::get('admin_login', 'AdminAuth\LoginController@showLoginForm');
