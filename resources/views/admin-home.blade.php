@@ -8,7 +8,7 @@
                 <div class="panel-heading">Admin Dashboard</div>
 
                 <div class="panel-body">
-                    Hello Admin!
+                    Hello {{ Auth::guard("admin_user")->user()->name }}, you are logged in!
                 </div>
             </div>
         </div>
