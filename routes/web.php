@@ -18,7 +18,7 @@ Route::get('/', function () {
 //Auth::routes();
 
 Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
-Route::get('cms', ['as' => 'admin.home', 'uses' => 'AdminHomeController@index']);
+Route::get('cms/dashboard', ['as' => 'admin.home', 'uses' => 'AdminHomeController@index']);
 
 
 // User Login Routes...
@@ -51,17 +51,8 @@ Route::post('cms/admin_password/email', ['as' => 'admin.password.email',  'uses'
 Route::post('cms/admin_password/reset', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@reset']);
 Route::post('cms/admin_password/reset', ['as' => 'admin.password.request', 'uses' => 'AdminAuth\ForgotPasswordController@showLinkRequestForm']);
 
-
-/*Route::get('admin_login', 'AdminAuth\LoginController@showLoginForm');
-Route::post('admin_login', 'AdminAuth\LoginController@login');
-Route::post('admin_logout', 'AdminAuth\LoginController@logout');
-
-Route::post('admin_password/email', 'AdminAuth\ForgotPasswordController@sendResetLinkEmail');
-Route::post('admin_password/reset', 'AdminAuth\ForgotPasswordController@showLinkRequestForm');
-Route::post('admin_password/reset', 'AdminAuth\ResetPasswordController@reset');
-Route::get('admin_password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
-
-Route::get ('admin_register', 'AdminAuth\RegisterController@showRegistrationForm');
-Route::post('admin_register', 'AdminAuth\RegisterController@register');
-
-*/
+// Force cms request to login
+Route::get('cms', function()
+{
+	return redirect('cms/admin_login');
+})->middleware('guest');

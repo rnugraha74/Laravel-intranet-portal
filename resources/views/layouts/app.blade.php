@@ -49,10 +49,8 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                        @if (Auth::guard("admin_user")->user())
-                            @include('layouts.admin-dropdown')
-                        @elseif (! Auth::guest())
-                            @include('layouts.dropdown')
+                        @if (! Auth::guest())
+                            @include('layouts.app-dropdown')
                         @else
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
