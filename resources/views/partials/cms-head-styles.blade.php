@@ -1,6 +1,3 @@
-@extends('layouts.master')
-
-@section('head-styles')
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
  
 <!-- Font Awesome -->
@@ -14,4 +11,6 @@
 
 <!-- iCheck -->
 <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
-@endsection
+
+<!--AdminLTE skin -->
+<link rel="stylesheet" href="{{ asset('css/_all-skins.css') }}">

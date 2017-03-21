@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <!-- Part: all meta-related contents -->
 
-    @yield('partials.head-meta')
+    @include('partials.head-meta')
 
     <!-- CSRF Token -->
-    @yield('partials.head-csrf-token')
+    @include('partials.head-csrf-token')
 
     <!-- Part: site title with default value in parent -->
     @section('head-title')
@@ -15,10 +15,10 @@
     @stop
 
     <!-- Styles -->
-    @yield('partials.head-styles')
+    @include('partials.head-styles')
 
     <!-- Scripts -->
-    @yield('partials.head-scripts')    
+    @include('partials.head-scripts')    
     
 </head>
 <body>
