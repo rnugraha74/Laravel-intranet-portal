@@ -6,7 +6,7 @@
 
     @include('partials.cms-head-csrf-token')
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>CMS Login</title>
 
     <!-- Styles -->
     @include('partials.cms-head-styles')

@@ -51,7 +51,7 @@ Route::post('cms/admin_password/email', ['as' => 'admin.password.email',  'uses'
 Route::post('cms/admin_password/reset', ['as' => 'admin.password.reset', 'uses' => 'AdminAuth\ResetPasswordController@reset']);
 Route::post('cms/admin_password/reset', ['as' => 'admin.password.request', 'uses' => 'AdminAuth\ForgotPasswordController@showLinkRequestForm']);
 
-// Force cms request to login
+// Force cms direct url to login
 Route::get('cms', function()
 {
 	return redirect('cms/admin_login');

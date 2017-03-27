@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   @include('partials.cms-head-meta')
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>CMS Login</title>
 
   <!-- Tell the browser to be responsive to screen width -->
   @include('partials.cms-head-meta')
