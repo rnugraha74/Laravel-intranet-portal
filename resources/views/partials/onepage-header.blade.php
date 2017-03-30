@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-<head>
-	<meta charset="utf-8">
-	@include('partials.onepage-head-meta')
-
-	<title>Welcome</title>
-
-	<!-- Styles -->
-	@include('partials.onepage-head-styles')
-
-</head>
-<body class="hold-transition skin-blue layout-top-nav">
-<div class="wrapper">
-	
-	<header class="main-header">
+  <header class="main-header">
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -67,7 +52,7 @@
                       <a href="#">
                         <div class="pull-left">
                           <!-- User Image -->
-                          <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                         </div>
                         <!-- Message title and timestamp -->
                         <h4>
@@ -198,8 +183,3 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
-
-
-</div>
-</body>
-</html>

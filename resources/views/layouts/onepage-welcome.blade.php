@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <!-- Part: all meta-related contents -->
 
-    @include('partials.head-meta')
-
-    <!-- CSRF Token -->
-    @include('partials.head-csrf-token')
+    @include('partials.onepage-head-meta')
 
     <!-- Part: site title with default value in parent -->
     @section('head-title')
@@ -15,14 +12,16 @@
     @stop
 
     <!-- Styles -->
-    @include('partials.head-styles')
-
-    <!-- Scripts -->
-    @include('partials.head-scripts')    
+    @include('partials.onepage-head-styles')
     
 </head>
-<body>
-    <div id="app">
+<body class="hold-transition skin-blue layout-top-nav>
+    <div class="wrapper">
+
+      <!-- Header -->  
+      @include('partials.onepage-header')
+
+      <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -63,8 +62,8 @@
         </nav>
 
         @yield('content')
+      </div>
     </div>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
