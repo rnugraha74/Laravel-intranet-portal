@@ -26,6 +26,9 @@
       <!-- Content -->
       @yield('content')
 
+      <!-- Footer -->
+      @include('partials.cms-footer')
+
       <!--Control Sidebar -->
       @include('partials.cms-control-sidebar')
 
