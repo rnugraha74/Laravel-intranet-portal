@@ -25,10 +25,10 @@
       	<!-- Carousel -->
       	<div class="row">
       		
-      		<div class="col-md-12">
-      		 	<div class="box box-solid">
-            <div class="box-header no-border">
-              <!--<h3 class="box-title">Gallery</h3>-->
+      		<div class="col-md-8">
+      		 	<div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Gallery</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -40,21 +40,21 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="{{ asset('//placehold.it/1500x500/39CCCC/ffffff&text=I+Love+Bootstrap') }}" alt="First slide">
+                    <img src="{{ asset('//placehold.it/900x500/39CCCC/ffffff&text=I+Love+Bootstrap') }}" alt="First slide">
 
                     <div class="carousel-caption">
                       First Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="{{ asset('//placehold.it/1500x500/3c8dbc/ffffff&text=I+Love+Bootstrap') }}" alt="Second slide">
+                    <img src="{{ asset('//placehold.it/900x500/3c8dbc/ffffff&text=I+Love+Bootstrap') }}" alt="Second slide">
 
                     <div class="carousel-caption">
                       Second Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="{{ asset('//placehold.it/1500x500/f39c12/ffffff&text=I+Love+Bootstrap') }}" alt="Third slide">
+                    <img src="{{ asset('//placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap') }}" alt="Third slide">
 
                     <div class="carousel-caption">
                       Third Slide
@@ -73,6 +73,76 @@
           	</div>
           <!-- /.box -->
         	</div>
+
+          <div class="col-md-4">
+              <!-- USERS LIST -->
+              <div class="box box-danger">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Directory</h3>
+
+                  <div class="box-tools pull-right">
+                    <span class="label label-danger">8 New Members</span>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <ul class="users-list clearfix">
+                    <li>
+                      <img src="{{ asset('img/user1-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Alexander Pierce</a>
+                      <span class="users-list-date">Today</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user8-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Norman</a>
+                      <span class="users-list-date">Yesterday</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user7-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Jane</a>
+                      <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user6-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">John</a>
+                      <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user2-160x160.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Alexander</a>
+                      <span class="users-list-date">13 Jan</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user5-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Sarah</a>
+                      <span class="users-list-date">14 Jan</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user4-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Nora</a>
+                      <span class="users-list-date">15 Jan</span>
+                    </li>
+                    <li>
+                      <img src="{{ asset('img/user3-128x128.jpg') }}" alt="User Image">
+                      <a class="users-list-name" href="#">Nadia</a>
+                      <span class="users-list-date">15 Jan</span>
+                    </li>
+                  </ul>
+                  <!-- /.users-list -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer text-center">
+                  <a href="javascript:void(0)" class="uppercase">View All Users</a>
+                </div>
+                <!-- /.box-footer -->
+              </div>
+              <!--/.box -->
+            </div>
+            <!-- /.col -->
 
         	<div class="col-md-8">
           <!-- Custom Tabs (Pulled to the right) -->
@@ -140,20 +210,18 @@
           <!-- nav-tabs-custom -->
         </div>
 
-        	<div class="col-md-4">
+       	<div class="col-md-4">
         		<!-- NEWS LIST -->
           <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">Insights</h3>
-
-              <!--
+             <!--
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
 							-->
-
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -219,8 +287,8 @@
           </div>
           <!-- /.box -->
         	</div>
-        	
-      	</div>
+       	</div>
+
         <!--
         <div class="callout callout-info">
           <h4>Tip!</h4>
