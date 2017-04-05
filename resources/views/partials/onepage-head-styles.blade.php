@@ -9,6 +9,7 @@
   
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
   
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->

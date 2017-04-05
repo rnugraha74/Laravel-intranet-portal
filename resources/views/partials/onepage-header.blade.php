@@ -12,9 +12,9 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a></li>
-            <li><a href="#">WORKSPACES</a></li>
-            <li><a href="#">DOCUMENTS</a></li>
-            <li><a href="#">PEOPLE</a></li>
+            <li><a href="#">Workspaces</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">People</a></li>
             <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documents <span class="caret"></span></a>
@@ -148,7 +148,7 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">HOME</a>
                     @else
-                        <a href="{{ url('/login') }}">SIGN IN</a>
+                        <a href="{{ url('/login') }}">Sign In</a>
                          <!-- do not allow guest to register
                         <a href="{{ url('/register') }}">Register</a> -->
                     @endif

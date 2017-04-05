@@ -9,6 +9,7 @@
  
 <!-- Theme style -->
 <link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
 <!-- iCheck -->
 <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
