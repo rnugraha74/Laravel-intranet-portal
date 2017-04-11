@@ -2,19 +2,18 @@
 <html lang="{{ config('app.locale') }}">
 <head>
   <meta charset="utf-8">
-  <title>Admin Login</title>
+  @include('partials.onepage-head-meta')
 
-  <!-- Tell the browser to be responsive to screen width -->
-  @include('partials.cms-head-meta')
-  
+  <title>User Login</title>
+
   <!-- CSRF Token -->
-  @include('partials.cms-head-csrf-token')
+  @include('partials.onepage-head-csrf-token')
 
   <!-- Styles -->
-  @include('partials.cms-head-styles')
+  @include('partials.onepage-head-styles')
   
   <!-- Scripts -->
-  @include('partials.cms-head-scripts')
+  @include('partials.onepage-head-scripts')
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +27,7 @@
 
   @yield('content')
 
-  @include('partials.cms-body-scripts')
+  @include('partials.onepage-body-scripts')
   
   <script>
     $(function () {

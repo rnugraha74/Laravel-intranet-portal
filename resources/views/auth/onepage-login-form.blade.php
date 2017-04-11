@@ -6,14 +6,14 @@
   <div class="login-logo">
     <a href="{{ url('/') }}">
       <!--{{ config('app.name', 'Laravel') }}-->
-      <b>CMS</b> Login
+      Welcome to <b>INTRANET</b>
     </a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="{{ route('admin.login') }}" method="POST" role="form"> 
+    <form action="{{ route('login') }}" method="POST" role="form"> 
       {{ csrf_field() }}
 
       <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -65,7 +65,7 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="{{ route('admin.password.reset') }}">I forgot my password</a><br>
+    <a href="{{ route('password.reset') }}">I forgot my password</a><br>
     <!--<a href="#" class="text-center">Register a new membership</a>-->
 
   </div>

@@ -6,7 +6,7 @@
   <div class="login-logo">
     <a href="{{ url('/') }}">
       <!--{{ config('app.name', 'Laravel') }}-->
-      <b>CMS</b> Login
+      <b>CMS</b>
     </a>
   </div>
   <!-- /.login-logo -->

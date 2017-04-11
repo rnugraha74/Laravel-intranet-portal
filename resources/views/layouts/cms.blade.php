@@ -6,7 +6,7 @@
 
     @include('partials.cms-head-csrf-token')
 
-    <title>CMS Login</title>
+    <title>CMS</title>
 
     <!-- Styles -->
     @include('partials.cms-head-styles')
