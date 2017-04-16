@@ -20,7 +20,10 @@ Route::get('/', function () {
 Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('cms/dashboard', ['as' => 'admin.home', 'uses' => 'AdminHomeController@index']);
 
-
+// User Login Routes...
+Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
+Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
 
 // User Registration Routes...
@@ -55,9 +58,6 @@ Route::get('cms', function()
 })->middleware('guest');
 
 // SessionTimeout Group
-Route::group(['middleware' => 'timeout'], function() {
-	// User Login Routes...
-	Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-	Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
-	Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-});
+//Route::group(['middleware' => 'timeout'], function() {
+	
+//});

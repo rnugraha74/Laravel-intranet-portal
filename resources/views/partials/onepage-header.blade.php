@@ -1,5 +1,6 @@
   <header class="main-header">
     <nav class="navbar navbar-static-top">
+      
       <div class="container">
         <div class="navbar-header">
           <a href="#" class="navbar-brand"><b>Intranet</b></a>
@@ -15,6 +16,7 @@
             <li><a href="#">Workspaces</a></li>
             <li><a href="#">Documents</a></li>
             <li><a href="#">People</a></li>
+            <li><a href="#">Blog</a></li>
             <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documents <span class="caret"></span></a>

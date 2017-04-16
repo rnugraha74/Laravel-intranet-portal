@@ -15,7 +15,7 @@
     @include('partials.onepage-head-styles')
     
 </head>
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue-light layout-top-nav">
   <div class="wrapper">
       <!-- Header -->  
       @include('partials.onepage-header')
