@@ -14,7 +14,7 @@
     <!-- Scripts -->
     @include('partials.cms-head-scripts')
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue-light sidebar-mini">
     <div class="wrapper">
 
       <!--Header -->
