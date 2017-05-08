@@ -30,6 +30,12 @@
         </div>
         <div class="col-sm-4">
           <div class="box box-widget">
+            <div class="box-header with-border">
+              <h3 class="box-title">Birthdays</h3>
+            </div>
+            <div class="box-body">
+              <p>This is bla-bla-bla</p>
+            </div>
           </div>
         </div>      
       </div>

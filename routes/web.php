@@ -18,6 +18,7 @@ Route::get('/', function () {
 //Auth::routes();
 
 Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('profile', ['as' => 'profile', 'uses' => 'UserController@profile']);
 Route::get('cms/dashboard', ['as' => 'admin.home', 'uses' => 'AdminHomeController@index']);
 
 // User Login Routes...
