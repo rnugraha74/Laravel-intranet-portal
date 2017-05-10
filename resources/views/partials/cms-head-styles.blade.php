@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="{{ asset('//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css') }}">
  
 <!-- Theme style -->
-<link rel="stylesheet" href="{{ asset('css/AdminLTE.css') }}">
+<link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
 <!-- iCheck -->
