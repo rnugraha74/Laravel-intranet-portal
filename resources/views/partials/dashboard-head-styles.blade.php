@@ -14,4 +14,4 @@
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-<link rel="stylesheet" href="{{ asset('css/skin-black.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/skin-blue.min.css') }}">

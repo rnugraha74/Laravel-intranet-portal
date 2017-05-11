@@ -15,4 +15,4 @@
 <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
 
 <!--AdminLTE skin -->
-<link rel="stylesheet" href="{{ asset('css/skin-blue-light.css') }}">
+<link rel="stylesheet" href="{{ asset('css/skin-blue.min.css') }}">
